@@ -51,12 +51,20 @@ namespace WindowsFormsApp1
 
             try
             {
-                sessionOptions.AppendExecutionProvider_CUDA();
-                System.Diagnostics.Debug.WriteLine("CUDA provider enabled");
+                sessionOptions.AppendExecutionProvider_DML(0);
             }
             catch (Exception ex)
             {
-                System.Diagnostics.Debug.WriteLine("CUDA provider FAILED: " + ex.ToString());
+                System.Diagnostics.Debug.WriteLine("DML failed: " + ex.Message);
+            }
+
+            try
+            {
+                sessionOptions.AppendExecutionProvider_CPU(0);
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine("CPU provider failed: " + ex.Message);
             }
 
             _session = new InferenceSession(modelPath, sessionOptions);
