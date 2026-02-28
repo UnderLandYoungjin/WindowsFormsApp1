@@ -3,6 +3,12 @@
 
 ---
 
+
+![Video Project 3](https://github.com/user-attachments/assets/413440ee-fbba-495e-97e6-1e5e548dcd6a)
+
+
+
+
 ## 1. 프로젝트 소개
 
 ### 1.1 프로젝트 목적
