@@ -1,6 +1,5 @@
 # YOLOv8 USB Camera Real-time Object Detection
-## C# WinForms 프로젝트 개요 (강의용)
-
+## C# WinForms 프로젝트 개요
 ---
 
 
